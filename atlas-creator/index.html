@@ -26,9 +26,33 @@
         </fieldset>
         <fieldset>
             <label for="sprite-width">Sprite width</label>
-            <input type="text" name="sprite-width" id="sprite-width">
+            <input type="text" name="sprite-width" id="sprite-width" value="32">
             <label for="sprite-height">Sprite height</label>
-            <input type="text" name="sprite-height" id="sprite-height">
+            <input type="text" name="sprite-height" id="sprite-height" value="32">
+        </fieldset>
+        <fieldset>
+            <select>
+                <option disabled selected>--- Add animation first ---</option>
+            </select>
+            <button id="editSelected" disabled>Edit animation</button>
+        </fieldset>
+        <fieldset>
+            <button id="addNew" disabled>Add new animation</button>
+        </fieldset>
+        <fieldset class="anim-controls" id="animPlaceholder">
+            <input name="animName" type="text" placeholder="Animation name" />
+            <span>Frames:</span>
+            <p class="frame-explanation">
+                Click on the sprites in the grid in the order they should appear in the animation
+            </p>
+            <div class="frame" id="framePlaceholder">
+                <span>Frame name</span>
+                <button class="frame-highlight">Highlight</button>
+                <button class="frame-remove">Remove frame</button>
+            </div>
+            <p>&nbsp;</p>
+            <button class="save-anim">Save animation</button>
+            <button class="remove-anim">Remove animation</button>
         </fieldset>
     </aside>
     <article>
